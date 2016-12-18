@@ -1892,3 +1892,205 @@ coredev.menu.DebugLevel.OTA2____=OTA + Updater
 coredev.menu.DebugLevel.OTA2____.build.debug_level=-DDEBUG_ESP_OTA -DDEBUG_ESP_UPDATER
 coredev.menu.DebugLevel.all_____=All
 coredev.menu.DebugLevel.all_____.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM
+
+##############################################################
+espr.name=Switch Science ESPr Developer
+
+espr.upload.tool=esptool
+espr.upload.speed=115200
+espr.upload.resetmethod=nodemcu
+espr.upload.maximum_size=434160
+espr.upload.maximum_data_size=81920
+espr.upload.wait_for_upload_port=true
+espr.serial.disableDTR=true
+espr.serial.disableRTS=true
+
+espr.build.mcu=esp8266
+espr.build.f_cpu=80000000L
+espr.build.board=SSCI_ESPR_DEV
+espr.build.core=esp8266
+espr.build.variant=espr
+espr.build.flash_mode=qio
+espr.build.spiffs_pagesize=256
+espr.build.debug_port=
+espr.build.debug_level=
+
+espr.menu.CpuFrequency.80=80 MHz
+espr.menu.CpuFrequency.80.build.f_cpu=80000000L
+espr.menu.CpuFrequency.160=160 MHz
+espr.menu.CpuFrequency.160.build.f_cpu=160000000L
+
+espr.menu.FlashFreq.40=40MHz
+espr.menu.FlashFreq.40.build.flash_freq=40
+espr.menu.FlashFreq.80=80MHz
+espr.menu.FlashFreq.80.build.flash_freq=80
+
+espr.menu.FlashMode.qio=QIO
+espr.menu.FlashMode.qio.build.flash_mode=qio
+
+espr.menu.UploadSpeed.115200=115200
+espr.menu.UploadSpeed.115200.upload.speed=115200
+espr.menu.UploadSpeed.9600=9600
+espr.menu.UploadSpeed.9600.upload.speed=9600
+espr.menu.UploadSpeed.57600=57600
+espr.menu.UploadSpeed.57600.upload.speed=57600
+espr.menu.UploadSpeed.256000.windows=256000
+espr.menu.UploadSpeed.256000.upload.speed=256000
+espr.menu.UploadSpeed.230400.linux=230400
+espr.menu.UploadSpeed.230400.macosx=230400
+espr.menu.UploadSpeed.230400.upload.speed=230400
+espr.menu.UploadSpeed.460800.linux=460800
+espr.menu.UploadSpeed.460800.macosx=460800
+espr.menu.UploadSpeed.460800.upload.speed=460800
+espr.menu.UploadSpeed.512000.windows=512000
+espr.menu.UploadSpeed.512000.upload.speed=512000
+espr.menu.UploadSpeed.921600=921600
+espr.menu.UploadSpeed.921600.upload.speed=921600
+
+espr.menu.FlashSize.512K64=512K (64K SPIFFS)
+espr.menu.FlashSize.512K64.build.flash_size=512K
+espr.menu.FlashSize.512K64.build.flash_ld=eagle.flash.512k64.ld
+espr.menu.FlashSize.512K64.build.spiffs_start=0x6B000
+espr.menu.FlashSize.512K64.build.spiffs_end=0x7B000
+espr.menu.FlashSize.512K64.build.spiffs_blocksize=4096
+espr.menu.FlashSize.512K64.upload.maximum_size=434160
+
+espr.menu.FlashSize.512K128=512K (128K SPIFFS)
+espr.menu.FlashSize.512K128.build.flash_size=512K
+espr.menu.FlashSize.512K128.build.flash_ld=eagle.flash.512k128.ld
+espr.menu.FlashSize.512K128.build.spiffs_start=0x5B000
+espr.menu.FlashSize.512K128.build.spiffs_end=0x7B000
+espr.menu.FlashSize.512K128.build.spiffs_blocksize=4096
+espr.menu.FlashSize.512K128.upload.maximum_size=368624
+
+espr.menu.FlashSize.512K0=512K (no SPIFFS)
+espr.menu.FlashSize.512K0.build.flash_size=512K
+espr.menu.FlashSize.512K0.build.flash_ld=eagle.flash.512k0.ld
+espr.menu.FlashSize.512K0.upload.maximum_size=499696
+
+espr.menu.FlashSize.1M512=1M (512K SPIFFS)
+espr.menu.FlashSize.1M512.build.flash_size=1M
+espr.menu.FlashSize.1M512.build.flash_ld=eagle.flash.1m512.ld
+espr.menu.FlashSize.1M512.build.spiffs_start=0x7B000
+espr.menu.FlashSize.1M512.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M512.build.spiffs_blocksize=8192
+espr.menu.FlashSize.1M512.upload.maximum_size=499696
+
+espr.menu.FlashSize.1M256=1M (256K SPIFFS)
+espr.menu.FlashSize.1M256.build.flash_size=1M
+espr.menu.FlashSize.1M256.build.flash_ld=eagle.flash.1m256.ld
+espr.menu.FlashSize.1M256.build.spiffs_start=0xBB000
+espr.menu.FlashSize.1M256.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M256.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M256.upload.maximum_size=761840
+
+espr.menu.FlashSize.1M192=1M (192K SPIFFS)
+espr.menu.FlashSize.1M192.build.flash_size=1M
+espr.menu.FlashSize.1M192.build.flash_ld=eagle.flash.1m192.ld
+espr.menu.FlashSize.1M192.build.spiffs_start=0xCB000
+espr.menu.FlashSize.1M192.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M192.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M192.upload.maximum_size=827376
+
+espr.menu.FlashSize.1M160=1M (160K SPIFFS)
+espr.menu.FlashSize.1M160.build.flash_size=1M
+espr.menu.FlashSize.1M160.build.flash_ld=eagle.flash.1m160.ld
+espr.menu.FlashSize.1M160.build.spiffs_start=0xD3000
+espr.menu.FlashSize.1M160.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M160.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M160.upload.maximum_size=860144
+
+espr.menu.FlashSize.1M144=1M (144K SPIFFS)
+espr.menu.FlashSize.1M144.build.flash_size=1M
+espr.menu.FlashSize.1M144.build.flash_ld=eagle.flash.1m144.ld
+espr.menu.FlashSize.1M144.build.spiffs_start=0xD7000
+espr.menu.FlashSize.1M144.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M144.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M144.upload.maximum_size=876528
+
+espr.menu.FlashSize.1M128=1M (128K SPIFFS)
+espr.menu.FlashSize.1M128.build.flash_size=1M
+espr.menu.FlashSize.1M128.build.flash_ld=eagle.flash.1m128.ld
+espr.menu.FlashSize.1M128.build.spiffs_start=0xDB000
+espr.menu.FlashSize.1M128.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M128.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M128.upload.maximum_size=892912
+
+espr.menu.FlashSize.1M64=1M (64K SPIFFS)
+espr.menu.FlashSize.1M64.build.flash_size=1M
+espr.menu.FlashSize.1M64.build.flash_ld=eagle.flash.1m64.ld
+espr.menu.FlashSize.1M64.build.spiffs_start=0xEB000
+espr.menu.FlashSize.1M64.build.spiffs_end=0xFB000
+espr.menu.FlashSize.1M64.build.spiffs_blocksize=4096
+espr.menu.FlashSize.1M64.upload.maximum_size=958448
+
+espr.menu.FlashSize.2M=2M (1M SPIFFS)
+espr.menu.FlashSize.2M.build.flash_size=2M
+espr.menu.FlashSize.2M.build.flash_ld=eagle.flash.2m.ld
+espr.menu.FlashSize.2M.build.spiffs_start=0x100000
+espr.menu.FlashSize.2M.build.spiffs_end=0x1FB000
+espr.menu.FlashSize.2M.build.spiffs_blocksize=8192
+espr.menu.FlashSize.2M.upload.maximum_size=1044464
+
+espr.menu.FlashSize.4M1M=4M (1M SPIFFS)
+espr.menu.FlashSize.4M1M.build.flash_size=4M
+espr.menu.FlashSize.4M1M.build.flash_ld=eagle.flash.4m1m.ld
+espr.menu.FlashSize.4M1M.build.spiffs_start=0x300000
+espr.menu.FlashSize.4M1M.build.spiffs_end=0x3FB000
+espr.menu.FlashSize.4M1M.build.spiffs_blocksize=8192
+espr.menu.FlashSize.4M1M.build.spiffs_pagesize=256
+espr.menu.FlashSize.4M1M.upload.maximum_size=1044464
+
+espr.menu.FlashSize.4M3M=4M (3M SPIFFS)
+espr.menu.FlashSize.4M3M.build.flash_size=4M
+espr.menu.FlashSize.4M3M.build.flash_ld=eagle.flash.4m.ld
+espr.menu.FlashSize.4M3M.build.spiffs_start=0x100000
+espr.menu.FlashSize.4M3M.build.spiffs_end=0x3FB000
+espr.menu.FlashSize.4M3M.build.spiffs_blocksize=8192
+espr.menu.FlashSize.4M3M.upload.maximum_size=1044464
+
+espr.menu.ResetMethod.ck=ck
+espr.menu.ResetMethod.ck.upload.resetmethod=ck
+espr.menu.ResetMethod.nodemcu=nodemcu
+espr.menu.ResetMethod.nodemcu.upload.resetmethod=nodemcu
+
+espr.menu.Debug.Disabled=Disabled
+espr.menu.Debug.Disabled.build.debug_port=
+espr.menu.Debug.Serial=Serial
+espr.menu.Debug.Serial.build.debug_port=-DDEBUG_ESP_PORT=Serial
+espr.menu.Debug.Serial1=Serial1
+espr.menu.Debug.Serial1.build.debug_port=-DDEBUG_ESP_PORT=Serial1
+
+espr.menu.DebugLevel.None____=None
+espr.menu.DebugLevel.None____.build.debug_level=
+espr.menu.DebugLevel.Core____=Core
+espr.menu.DebugLevel.Core____.build.debug_level=-DDEBUG_ESP_CORE
+espr.menu.DebugLevel.SSL_____=Core + SSL
+espr.menu.DebugLevel.SSL_____.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_SSL
+espr.menu.DebugLevel.SSL_MEM_=Core + SSL + TLS Mem
+espr.menu.DebugLevel.SSL_MEM_.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_TLS_MEM
+espr.menu.DebugLevel.WiFic___=Core + WiFi
+espr.menu.DebugLevel.WiFic___.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_WIFI
+espr.menu.DebugLevel.WiFi____=WiFi
+espr.menu.DebugLevel.WiFi____.build.debug_level=-DDEBUG_ESP_WIFI
+espr.menu.DebugLevel.HTTPClient=HTTPClient
+espr.menu.DebugLevel.HTTPClient.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT
+espr.menu.DebugLevel.HTTPClient2=HTTPClient + SSL
+espr.menu.DebugLevel.HTTPClient2.build.debug_level=-DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_SSL
+espr.menu.DebugLevel.HTTPUpdate=HTTPUpdate
+espr.menu.DebugLevel.HTTPUpdate.build.debug_level=-DDEBUG_ESP_HTTP_UPDATE
+espr.menu.DebugLevel.HTTPUpdate2=HTTPClient + HTTPUpdate
+espr.menu.DebugLevel.HTTPUpdate2.build.debug_level=-DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_UPDATE
+espr.menu.DebugLevel.HTTPUpdate3=HTTPClient + HTTPUpdate + Updater
+espr.menu.DebugLevel.HTTPUpdate3.build.debug_level=-DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_UPDATER
+espr.menu.DebugLevel.HTTPServer=HTTPServer
+espr.menu.DebugLevel.HTTPServer.build.debug_level=-DDEBUG_ESP_HTTP_SERVER
+espr.menu.DebugLevel.UPDATER=Updater
+espr.menu.DebugLevel.UPDATER.build.debug_level=-DDEBUG_ESP_UPDATER
+espr.menu.DebugLevel.OTA_____=OTA
+espr.menu.DebugLevel.OTA_____.build.debug_level=-DDEBUG_ESP_OTA
+espr.menu.DebugLevel.OTA2____=OTA + Updater
+espr.menu.DebugLevel.OTA2____.build.debug_level=-DDEBUG_ESP_OTA -DDEBUG_ESP_UPDATER
+espr.menu.DebugLevel.all_____=All
+espr.menu.DebugLevel.all_____.build.debug_level=-DDEBUG_ESP_CORE -DDEBUG_ESP_SSL -DDEBUG_ESP_WIFI -DDEBUG_ESP_HTTP_CLIENT -DDEBUG_ESP_HTTP_UPDATE -DDEBUG_ESP_HTTP_SERVER -DDEBUG_ESP_UPDATER -DDEBUG_ESP_OTA -DDEBUG_TLS_MEM
+ 
